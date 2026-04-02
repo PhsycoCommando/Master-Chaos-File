@@ -1,0 +1,6 @@
+.tmp/
+.env
+credentials.json
+token.json
+.agents/
+.dev_notes/.secure/
