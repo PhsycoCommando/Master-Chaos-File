@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHYSCO Brand Test</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #39FF14;
+            --secondary: #0B3D2E;
+            --accent: #FF5E00;
+            --bg: #0A0A0A;
+            --text-primary: #FFFFFF;
+            --text-muted: #9CA3AF;
+            --radius: 8px;
+        }
+        body {
+            background-color: var(--bg);
+            color: var(--text-primary);
+            font-family: 'Inter', sans-serif;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            max-width: 1200px;
+            text-align: center;
+        }
+        h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 4rem;
+            color: var(--primary);
+            text-shadow: 0 0 15px rgba(57, 255, 20, 0.4);
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+        p {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+        }
+        .btn {
+            background: transparent;
+            color: var(--text-primary);
+            border: 1px solid var(--accent);
+            padding: 12px 30px;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.25rem;
+            border-radius: var(--radius);
+            cursor: pointer;
+            transition: 0.2s ease;
+        }
+        .btn:hover {
+            box-shadow: 0 0 15px rgba(255, 94, 0, 0.4);
+        }
+        .btn.active {
+            border-color: var(--primary);
+            color: var(--primary);
+            box-shadow: 0 0 20px rgba(57, 255, 20, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Neon Grit Tech</h1>
+        <p>3AM. The infrastructure is live. The glow is minimal. The chaos is controlled.</p>
+        <button class="btn">Initiate</button>
+        <button class="btn active" style="margin-left: 10px;">System Active</button>
+    </div>
+</body>
+</html>
