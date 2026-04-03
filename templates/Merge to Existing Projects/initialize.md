@@ -34,10 +34,20 @@ When a user asks you to execute, run, or "initialize" this file (e.g., `@[initia
    - You must never write any secure information in `.dev_notes/` directly (e.g. passwords, API keys, sensitive rules).
    - If you need to store secure developer notes, you must always place them inside the `.dev_notes/.secure/` folder and reference those secure files from the regular dev notes.
 
-5. **Visual Branding Assimilation:**
+5. **Cursor Rules Assimilation:**
+   - Look for a `.cursor/rules/` folder or a `.cursorrules` file in the project root.
+   - If found, read every rule and convert them into Antigravity architecture workflows or explicit instructions placed inside `.agents/workflows/` or `.dev_notes/`.
+   - Once successfully converted and consolidated, DELETE the old `.cursor/` rules folder and/or `.cursorrules` file to prevent conflicting instruction sets.
+
+6. **Dev Notes Consolidation:**
+   - Identify any existing fragmented developer notes strewn about the project (e.g. `todo.md`, `notes.txt`, `docs/dev/`, `marketing/`).
+   - Move, merge, and beautifully organize all these notes into our structured `.dev_notes/` directory.
+   - Delete the old sprawling note files so the workspace is kept perfectly clean and unified.
+
+7. **Visual Branding Assimilation:**
    - On an existing project, the branding is very likely already set within CSS variables, Tailwind configurations, or global stylesheets.
    - Run a codebase scan to identify the existing visual branding elements (Primary colors, secondary colors, chosen font families, UI morphology, and border styles).
-   - Use this extracted data to automatically overwrite and populate the `skills/brand-guidelines/SKILL_brand-guidelines.md` profile so that the AI inherently matches and adopts the existing project's visual identity for all future work.
+   - Use this extracted data to automatically overwrite and populate the `skills/brand-guidelines/SKILL_brand-guidelines.md` profile so that the AI inherently matches and adopts the existing project's visual identity for all future work. Under NO circumstances should you create a generic `SKILL.md` file; only modify the existing `SKILL_brand-guidelines.md`.
 
-6. **Lock It In:**
+8. **Lock It In:**
    Report back to the user listing specifically what was merged, what branding styles were discovered and adopted, and what was completely untouched. Assure them the project configuration is verified and the 3-layer AI framework is ready.
